@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilham Widi Mahendra - Portfolio</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Ilham Widi Mahendra - Informatics Student & Tech Entrepreneur. Portfolio showcasing development projects and business ventures.">
+    <meta name="keywords" content="Ilham Widi, web development, mobile development, entrepreneur, portfolio, programmer, flutter, laravel, php">
+    <meta name="author" content="Ilham Widi Mahendra">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ilhamwidi.com/">
+    <meta property="og:title" content="Ilham Widi Mahendra - Portfolio">
+    <meta property="og:description" content="Informatics Student & Tech Entrepreneur showcasing development projects and business ventures.">
+    <meta property="og:image" content="https://ilhamwidi.com/assets/img/profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-950 to-black min-h-screen text-white">
+    <!-- Particle Background -->
+    <div id="particles-js" class="fixed inset-0 z-0"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="--size: 150px; --speed: 20s; --delay: 0s; --opacity: 0.05; --top: 15%; --left: 10%;"></div>
+        <div class="floating-element" style="--size: 200px; --speed: 25s; --delay: 5s; --opacity: 0.07; --top: 60%; --left: 75%;"></div>
+        <div class="floating-element" style="--size: 120px; --speed: 30s; --delay: 2s; --opacity: 0.03; --top: 30%; --left: 85%;"></div>
+        <div class="floating-element" style="--size: 180px; --speed: 22s; --delay: 8s; --opacity: 0.04; --top: 70%; --left: 20%;"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="glassmorphism fixed w-full z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">
+                <span class="glitch-text" data-text="Ilham.Widi">Ilham<span class="text-blue-400">.Widi</span></span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#about" class="nav-link hover:text-blue-400 transition duration-300">About</a>
+                <a href="#skills" class="nav-link hover:text-blue-400 transition duration-300">Skills</a>
+                <a href="#projects" class="nav-link hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#experience" class="nav-link hover:text-blue-400 transition duration-300">Experience</a>
+                <a href="#contact" class="nav-link hover:text-blue-400 transition duration-300">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="hidden md:block text-blue-400 text-sm py-2 px-4 neon-border rounded-full">
+                    <i class="fas fa-download mr-2"></i>Download CV
+                </button>
+                <button class="md:hidden neomorphic-btn" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="flex flex-col space-y-4 mt-4 p-4 glassmorphism rounded-lg">
+                <a href="#home" class="hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition duration-300">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition duration-300">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition duration-300">Experience</a>
+                <a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a>
+                <a href="#" class="text-blue-400 flex items-center">
+                    <i class="fas fa-download mr-2"></i>Download CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative z-10">
+        <div class="absolute inset-0 bg-gradient-radial from-blue-900/20 to-transparent"></div>
+        <div class="container mx-auto px-4 py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                <div class="code-block mb-4 inline-block">
+                    <span class="text-gray-400">// Hello World, My name is</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span id="typewriter" class="neon-text"></span>
+                </h1>
+                <h2 class="text-xl md:text-3xl mb-6 text-blue-300">Informatics Student & Tech Entrepreneur</h2>
+                <p class="text-gray-300 mb-8 max-w-lg leading-relaxed">
+                    Building digital solutions and exploring the intersection of technology and business innovation. Currently focused on mobile development and e-commerce solutions.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="neomorphic-btn px-6 py-3 rounded-lg btn-hover-effect">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="glassmorphism-btn px-6 py-3 rounded-lg neon-border btn-hover-effect">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#" class="social-icon-large">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon-large">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon-large">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-large">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-glow"></div>
+                        <img src="https://via.placeholder.com/400x400.png?text=Ilham+Widi" alt="Ilham Widi" class="profile-image">
+                    </div>
+                    <div class="tech-orbit">
+                        <div class="orbit-circle"></div>
+                        <div class="tech-planet" style="--rotate: 0deg">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-planet" style="--rotate: 72deg">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-planet" style="--rotate: 144deg">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-planet" style="--rotate: 216deg">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="tech-planet" style="--rotate: 288deg">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-blue-300 scroll-down-arrow">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="absolute bottom-0 left-0 right-0 py-4 bg-gradient-to-t from-blue-950/80 to-transparent">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number"><span class="counter" data-target="5">0</span>+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number"><span class="counter" data-target="30">0</span>+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number"><span class="counter" data-target="6">0</span></div>
+                        <div class="stat-label">Programming Languages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" data-aos="fade-up">
+                <span class="neon-text before-heading">About</span> Me
+            </h2>
+            <p class="text-blue-300 text-center mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Get to know me better: my background, education, and what drives my passion for technology and business.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-image-container">
+                        <div class="about-image-wrapper neomorphic-card p-3 rounded-xl">
+                            <img src="https://via.placeholder.com/600x800.png?text=Ilham+At+Work" alt="Ilham at work" class="rounded-lg w-full h-auto">
+                            <div class="experience-badge">
+                                <div class="exp-years">5+</div>
+                                <div class="exp-text">Years of Experience</div>
+                            </div>
+                        </div>
+                        <div class="code-decoration">
+                            <pre><code>
+class <span class="text-purple-400">Person</span> {
+  constructor() {
+    this.name = "<span class="text-green-400">Ilham Widi</span>";
+    this.traits = [
+      "<span class="text-yellow-400">developer</span>",
+      "<span class="text-yellow-400">entrepreneur</span>",
+      "<span class="text-yellow-400">innovator</span>"
+    ];
+  }
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" data-aos-duration="800">
+                    <div class="glassmorphism p-8 rounded-xl">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-semibold text-blue-300 mb-4">Who I Am</h3>
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                I am an Informatics student passionate about technology and digital business. With a strong foundation in various programming languages and frameworks, I balance technical expertise with entrepreneurial spirit.
+                            </p>
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Currently, I manage <span class="neon-text">Widi.iphone</span>, a business focused on selling Apple products in Surabaya, Sidoarjo, and Gresik regions. This venture has equipped me with valuable skills in business management, customer relations, and digital marketing.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-start">
+                                <div class="icon-container flex-shrink-0 mt-1 mr-3">
+                                    <i class="fas fa-user-graduate text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Education</h4>
+                                    <p class="text-sm text-gray-400">Informatics, University Name, 2020-Present</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="icon-container flex-shrink-0 mt-1 mr-3">
+                                    <i class="fas fa-map-marker-alt text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p class="text-sm text-gray-400">Surabaya, East Java, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="icon-container flex-shrink-0 mt-1 mr-3">
+                                    <i class="fas fa-briefcase text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Experience</h4>
+                                    <p class="text-sm text-gray-400">5+ Years in Web & Mobile Development</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="icon-container flex-shrink-0 mt-1 mr-3">
+                                    <i class="fas fa-language text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Languages</h4>
+                                    <p class="text-sm text-gray-400">Indonesian (Native), English (Fluent)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="interest-tag">Technology-based business</span>
+                            <span class="interest-tag">Information systems</span>
+                            <span class="interest-tag">Digital innovation</span>
+                            <span class="interest-tag">Mobile app development</span>
+                            <span class="interest-tag">E-commerce</span>
+                            <span class="interest-tag">AI & Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Section -->
+            <div class="mt-20">
+                <h3 class="text-2xl font-semibold text-center mb-16" data-aos="fade-up">Services I Offer</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">Web Development</h4>
+                        <p class="text-gray-300">
+                            Creating responsive and modern websites with clean code and optimal performance using the latest technologies.
+                        </p>
+                        <div class="service-technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">Mobile App Development</h4>
+                        <p class="text-gray-300">
+                            Building cross-platform mobile applications with intuitive interfaces and smooth performance for Android and iOS.
+                        </p>
+                        <div class="service-technologies">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">E-Commerce Solutions</h4>
+                        <p class="text-gray-300">
+                            Developing complete e-commerce platforms with inventory management, payment integration, and customer portals.
+                        </p>
+                        <div class="service-technologies">
+                            <span>Online Store</span>
+                            <span>Payment Gateways</span>
+                            <span>Inventory Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-b from-transparent to-blue-950/30 relative z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" data-aos="fade-up">
+                My <span class="neon-text before-heading">Skills</span>
+            </h2>
+            <p class="text-blue-300 text-center mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Technical abilities that I've developed over the years through education, projects, and professional experience.
+            </p>
+            
+            <div class="skill-tabs mb-10" data-aos="fade-up">
+                <div class="flex flex-wrap justify-center mb-8">
+                    <button class="skill-tab-btn active" data-target="frontend">Frontend</button>
+                    <button class="skill-tab-btn" data-target="backend">Backend</button>
+                    <button class="skill-tab-btn" data-target="mobile">Mobile</button>
+                    <button class="skill-tab-btn" data-target="other">Other</button>
+                </div>
+                
+                <div class="skill-content active" id="frontend-skills">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glassmorphism p-6 rounded-xl" data-aos="fade-right" data-aos-duration="800">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>CSS & Tailwind</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 85%; --delay: 0.2s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>JavaScript</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 80%; --delay: 0.4s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="skill-details neomorphic-card p-6 rounded-xl">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-300">Frontend Development</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Creating responsive, user-friendly interfaces with modern frameworks and best practices for optimal user experience.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-badge-sm">HTML5</span>
+                                    <span class="tech-badge-sm">CSS3</span>
+                                    <span class="tech-badge-sm">JavaScript</span>
+                                    <span class="tech-badge-sm">Tailwind CSS</span>
+                                    <span class="tech-badge-sm">Bootstrap</span>
+                                    <span class="tech-badge-sm">React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-content hidden" id="backend-skills">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>PHP Native</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 85%; --delay: 0.1s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Laravel</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 80%; --delay: 0.3s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Python</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 75%; --delay: 0.5s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="skill-details neomorphic-card p-6 rounded-xl">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-300">Backend Development</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Building robust server-side applications, RESTful APIs, and database integrations to power web and mobile applications.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-badge-sm">PHP</span>
+                                    <span class="tech-badge-sm">Laravel</span>
+                                    <span class="tech-badge-sm">MySQL</span>
+                                    <span class="tech-badge-sm">Python</span>
+                                    <span class="tech-badge-sm">API Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-content hidden" id="mobile-skills">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Flutter</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 80%; --delay: 0.2s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Dart</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 75%; --delay: 0.3s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Firebase</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 70%; --delay: 0.4s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="skill-details neomorphic-card p-6 rounded-xl">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-300">Mobile Development</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Developing cross-platform mobile applications with beautiful UI/UX and seamless functionality for both Android and iOS devices.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-badge-sm">Flutter</span>
+                                    <span class="tech-badge-sm">Dart</span>
+                                    <span class="tech-badge-sm">Firebase</span>
+                                    <span class="tech-badge-sm">Mobile UI/UX</span>
+                                    <span class="tech-badge-sm">State Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-content hidden" id="other-skills">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>C Language</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 70%; --delay: 0.3s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>Business Management</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 85%; --delay: 0.5s"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span>UI/UX Design</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="skill-progress-bar h-2 rounded-full" style="--progress: 75%; --delay: 0.7s"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="skill-details neomorphic-card p-6 rounded-xl">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-300">Other Skills</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Additional technical and soft skills that complement my development capabilities and business acumen.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-badge-sm">C Language</span>
+                                    <span class="tech-badge-sm">Git</span>
+                                    <span class="tech-badge-sm">UI/UX Design</span>
+                                    <span class="tech-badge-sm">Business Management</span>
+                                    <span class="tech-badge-sm">Project Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-4xl mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="coding-metrics neomorphic-card p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-6 text-center text-blue-300">My Coding Journey</h3>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <div class="coding-metric">
+                            <div class="metric-value"><span class="counter" data-target="5000">0</span>+</div>
+                            <div class="metric-label">Hours of Coding</div>
+                        </div>
+                        <div class="coding-metric">
+                            <div class="metric-value"><span class="counter" data-target="50">0</span>+</div>
+                            <div class="metric-label">Github Repositories</div>
+                        </div>
+                        <div class="coding-metric">
+                            <div class="metric-value"><span class="counter" data-target="15">0</span>+</div>
+                            <div class="metric-label">Completed Projects</div>
+                        </div>
+                        <div class="coding-metric">
+                            <div class="metric-value"><span class="counter" data-target="6">0</span></div>
+                            <div class="metric-label">Programming Languages</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Dart</span>
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" data-aos="fade-up">
+                My <span class="neon-text before-heading">Projects</span>
+            </h2>
+            <p class="text-blue-300 text-center mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                A selection of my recent work including web applications, mobile apps, and business solutions.
+            </p>
+            
+            <div class="project-filter mb-10" data-aos="fade-up">
+                <div class="flex flex-wrap justify-center mb-8">
+                    <button class="project-filter-btn active" data-filter="all">All</button>
+                    <button class="project-filter-btn" data-filter="web">Web</button>
+                    <button class="project-filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="project-filter-btn" data-filter="business">Business</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-category="web">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=E-Commerce+App" alt="Project 1" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">Web App</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">E-Commerce Mobile App</h3>
+                        <p class="text-gray-300 mb-4">A Flutter-based mobile application for an e-commerce platform with seamless user experience and secure payment integration.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">Flutter</span>
+                            <span class="tech-badge-sm">Dart</span>
+                            <span class="tech-badge-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-aos-delay="100" data-category="mobile">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Management+System" alt="Project 2" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">Mobile App</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">Business Management System</h3>
+                        <p class="text-gray-300 mb-4">A comprehensive web-based system for inventory management, customer relations, and sales tracking.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">Laravel</span>
+                            <span class="tech-badge-sm">MySQL</span>
+                            <span class="tech-badge-sm">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-aos-delay="200" data-category="web">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Smart+Home" alt="Project 3" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">IoT Solution</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">Smart Home Automation</h3>
+                        <p class="text-gray-300 mb-4">IoT-based system for home automation with mobile app control and energy consumption monitoring.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">Python</span>
+                            <span class="tech-badge-sm">C</span>
+                            <span class="tech-badge-sm">IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-aos-delay="100" data-category="web business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Educational+Platform" alt="Project 4" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">Web Platform</span>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">Educational Platform</h3>
+                        <p class="text-gray-300 mb-4">A web application for online learning with interactive courses, quizzes, and progress tracking.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">HTML</span>
+                            <span class="tech-badge-sm">CSS</span>
+                            <span class="tech-badge-sm">JavaScript</span>
+                            <span class="tech-badge-sm">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-aos-delay="200" data-category="mobile">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Health+App" alt="Project 5" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">Mobile App</span>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">Health Monitoring App</h3>
+                        <p class="text-gray-300 mb-4">Mobile application for health tracking with personalized insights and goal setting features.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">Flutter</span>
+                            <span class="tech-badge-sm">Firebase</span>
+                            <span class="tech-badge-sm">ML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card glassmorphism rounded-xl overflow-hidden" data-aos="flip-up" data-aos-duration="800" data-aos-delay="300" data-category="business">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Widi.iphone" alt="Project 6" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="neomorphic-btn px-4 py-2 rounded-lg">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="project-meta mb-2">
+                            <span class="project-category">E-Commerce</span>
+                            <span class="project-date">2021</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-300">Widi.iphone Online Store</h3>
+                        <p class="text-gray-300 mb-4">E-commerce platform for Apple products with inventory management system and customer portal.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge-sm">Laravel</span>
+                            <span class="tech-badge-sm">JavaScript</span>
+                            <span class="tech-badge-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Featured Project -->
+            <div class="mt-16" data-aos="fade-up">
+                <div class="featured-project neomorphic-card p-6 rounded-xl">
+                    <div class="featured-label">Featured Project</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-blue-300">Widi.iphone E-Commerce Platform</h3>
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                A comprehensive e-commerce solution built for my Apple products business. The platform features inventory management, order processing, customer accounts, and analytics dashboards.
+                            </p>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                This project combines my technical skills with my business knowledge, resulting in a system that has increased sales by 35% and improved customer satisfaction.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="tech-badge-sm">Laravel</span>
+                                <span class="tech-badge-sm">Vue.js</span>
+                                <span class="tech-badge-sm">MySQL</span>
+                                <span class="tech-badge-sm">TailwindCSS</span>
+                                <span class="tech-badge-sm">Payment Gateway</span>
+                            </div>
+                            <a href="#" class="btn-link">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="featured-project-image">
+                            <img src="https://via.placeholder.com/800x600.png?text=Featured+Project" alt="Featured Project" class="rounded-lg w-full h-auto neon-border">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project CTA -->
+            <div class="text-center mt-16" data-aos="fade-up">
+                <p class="mb-6 text-gray-300">Interested in seeing more of my work?</p>
+                <a href="#" class="inline-block neomorphic-btn px-6 py-3 rounded-lg btn-hover-effect">
+                    <i class="fab fa-github mr-2"></i>Visit My GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gradient-to-b from-blue-950/10 via-blue-950/30 to-blue-950/10 relative z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" data-aos="fade-up">
+                Work <span class="neon-text before-heading">Experience</span>
+            </h2>
+            <p class="text-blue-300 text-center mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                My professional journey and the roles I've taken on throughout my career.
+            </p>
+            
+            <div class="max-w-5xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Line -->
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Experience 1 -->
+                    <div class="relative mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/2 md:pr-10 md:text-right order-2 md:order-1">
+                                <div class="neomorphic-card p-6 rounded-xl ml-6 md:ml-0 timeline-card" data-aos="fade-right" data-aos-delay="100">
+                                    <span class="timeline-year">2020 - Present</span>
+                                    <h3 class="text-xl font-semibold text-blue-300">Founder & Manager</h3>
+                                    <h4 class="text-lg font-medium">Widi.iphone</h4>
+                                    <p class="text-gray-300 mt-4">
+                                        Managing a business specializing in Apple products sales across Surabaya, Sidoarjo, and Gresik. Handling marketing, sales, customer relations, and business development.
+                                    </p>
+                                    <ul class="mt-4 space-y-2">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Grew monthly revenue by 40% through digital marketing strategies</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Developed and implemented inventory management system</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Built a loyal customer base of 500+ repeat buyers</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="50">
+                                <i class="fas fa-briefcase text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10 order-1 md:order-2 mb-6 md:mb-0">
+                                <div class="h-full flex items-center">
+                                    <div class="ml-6 md:ml-0 md:hidden neomorphic-card p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-blue-300">Founder & Manager</h3>
+                                        <h4 class="text-lg font-medium">Widi.iphone</h4>
+                                        <p class="text-gray-400 mb-2">2020 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="relative mb-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/2 md:pr-10 md:text-right order-2 md:order-1 mb-6 md:mb-0">
+                                <div class="h-full flex items-center justify-end">
+                                    <div class="ml-6 md:ml-0 md:hidden neomorphic-card p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-blue-300">Web Developer</h3>
+                                        <h4 class="text-lg font-medium">IT Community Projects</h4>
+                                        <p class="text-gray-400 mb-2">2019 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="250">
+                                <i class="fas fa-code text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10 order-1 md:order-2">
+                                <div class="neomorphic-card p-6 rounded-xl ml-6 md:ml-0 timeline-card" data-aos="fade-left" data-aos-delay="300">
+                                    <span class="timeline-year">2019 - Present</span>
+                                    <h3 class="text-xl font-semibold text-blue-300">Web Developer</h3>
+                                    <h4 class="text-lg font-medium">IT Community Projects</h4>
+                                    <p class="text-gray-300 mt-4">
+                                        Collaborating with fellow IT community members to develop web applications and technology solutions for various clients and community initiatives.
+                                    </p>
+                                    <ul class="mt-4 space-y-2">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Developed 10+ websites for local businesses and organizations</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Created custom CMS solutions for content management</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Mentored junior developers in web technologies</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/2 md:pr-10 md:text-right order-2 md:order-1">
+                                <div class="neomorphic-card p-6 rounded-xl ml-6 md:ml-0 timeline-card" data-aos="fade-right" data-aos-delay="500">
+                                    <span class="timeline-year">2021 - Present</span>
+                                    <h3 class="text-xl font-semibold text-blue-300">Mobile App Developer</h3>
+                                    <h4 class="text-lg font-medium">Freelance Projects</h4>
+                                    <p class="text-gray-300 mt-4">
+                                        Developing custom mobile applications using Flutter for various clients, focusing on creating intuitive user interfaces and robust functionality.
+                                    </p>
+                                    <ul class="mt-4 space-y-2">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Built 5+ mobile apps for Android and iOS platforms</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Implemented Firebase backend integration for real-time data</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>Created custom UI components for enhanced user experience</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="450">
+                                <i class="fas fa-mobile-alt text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10 order-1 md:order-2 mb-6 md:mb-0">
+                                <div class="h-full flex items-center">
+                                    <div class="ml-6 md:ml-0 md:hidden neomorphic-card p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-blue-300">Mobile App Developer</h3>
+                                        <h4 class="text-lg font-medium">Freelance Projects</h4>
+                                        <p class="text-gray-400 mb-2">2021 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="mt-24">
+                <h3 class="text-2xl font-semibold text-center mb-16" data-aos="fade-up">What Clients Say</h3>
+                
+                <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-container">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        Ilham developed an amazing e-commerce platform for our business. His attention to detail and understanding of user experience made all the difference.
+                                    </p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-author-image">
+                                        <img src="https://via.placeholder.com/100x100.png?text=A" alt="Client">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <h4 class="author-name">Ahmad Rizal</h4>
+                                        <p class="author-title">CEO, TechRetail</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        Working with Ilham on our mobile app was a great experience. He understood our needs perfectly and delivered beyond expectations.
+                                    </p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-author-image">
+                                        <img src="https://via.placeholder.com/100x100.png?text=S" alt="Client">
+                                    </div>
+                                    <div class="testimonial-author-info">
+                                        <h4 class="author-name">Siti Aminah</h4>
+                                        <p class="author-title">Product Manager, HealthApp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        The website Ilham created for our company has significantly increased our online presence and customer engagement. Professional and reliable service.
+                                    </p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i
